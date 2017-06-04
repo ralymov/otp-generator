@@ -60,10 +60,10 @@ void setup() {
 void loop() {
 
 	String content = readSerial();
-	module.setDisplayToString(content.substring(4));
-	delay(4000);
-	module.setDisplayToString(content.substring(12));
-	delay(4000);
+	//module.setDisplayToString(content);
+	//delay(2000);
+	//module.setDisplayToString(content.substring(12));
+	//delay(2000);
 
 	if (content != "") {
 		//module.setDisplayToString(content);
@@ -130,7 +130,9 @@ String readSerial() {
 			return input_string;
 		}
 		input_string += c;
+		delay(30);
 	}
+	return input_string;
 }
 
 ///проверка пин-кода
