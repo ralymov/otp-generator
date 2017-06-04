@@ -1,0 +1,6 @@
+E:\Desktop\диплом\SocketTest\SocketTest\bin\Debug\SocketTest.exe.config
+E:\Desktop\диплом\SocketTest\SocketTest\bin\Debug\SocketTest.exe
+E:\Desktop\диплом\SocketTest\SocketTest\bin\Debug\SocketTest.pdb
+E:\Desktop\диплом\SocketTest\SocketTest\obj\Debug\SocketTest.csprojResolveAssemblyReference.cache
+E:\Desktop\диплом\SocketTest\SocketTest\obj\Debug\SocketTest.exe
+E:\Desktop\диплом\SocketTest\SocketTest\obj\Debug\SocketTest.pdb
