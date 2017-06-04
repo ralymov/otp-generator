@@ -21,8 +21,21 @@ namespace SocketTest
                 portName = GetPortName();
             }
             SerialPort port = new SerialPort(GetPortName(), 9600);
-            port.ReadTimeout = 5000;
+            //port.DtrEnable = true;
+            port.ReadTimeout = 10000;
             port.WriteTimeout = 10000;
+            port.Open();
+
+            /*
+            for (int i=0;i<10;i++)
+            {
+                string message = "test" + 123456789011 + "\n";
+                port.Write(message);
+                Console.WriteLine("Отправлено: " + message + "\n");
+                //port.Close();
+                System.Threading.Thread.Sleep(20000);
+            }
+            */
 
 
             // Устанавливаем для сокета локальную конечную точку
@@ -72,11 +85,11 @@ namespace SocketTest
 
                     handler.Shutdown(SocketShutdown.Both);
                     handler.Close();
-                    port.Open();
-                    string message = "WAIT" + data;
+                    //port.Open();
+                    string message = "WAIT" + data+"\n";
                     port.Write(message);
                     Console.WriteLine("Отправлено: " + message+ "\n");
-                    port.Close();
+                    //port.Close();
                 }
             }
             catch (Exception ex)
